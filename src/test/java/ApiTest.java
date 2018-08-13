@@ -1,6 +1,5 @@
 import com.google.common.io.Resources;
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 import java.io.IOException;
@@ -23,23 +22,26 @@ public class ApiTest {
         long id = timestamp.getTime();
 
         json.put("id", id);
+        json.getJSONObject("category").put("id", id);
 
-        long newId =
         given()
             .contentType("application/json")
-            .body(json)
+            .body(json.toString())
         .when()
             .post("/pet")
         .then()
-            .statusCode(200)
-        .extract()
-            .path("id");
+            .statusCode(200);
 
+        String responseBody =
         given()
             .contentType("application/json")
         .when()
-            .get("/pet/{newId}", newId)
+            .get("/pet/{newId}", id)
         .then()
-            .statusCode(200);
+            .statusCode(200)
+        .extract()
+            .body().asString();
+
+        System.out.println(responseBody);
     }
 }
