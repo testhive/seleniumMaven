@@ -1,4 +1,5 @@
 import com.google.common.io.Resources;
+import extensions.RetryAnalyzer;
 import io.restassured.RestAssured;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
