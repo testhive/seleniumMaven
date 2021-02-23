@@ -11,7 +11,7 @@ import java.sql.Timestamp;
 
 import static io.restassured.RestAssured.given;
 
-public class ApiTest {
+public class ApiTests {
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void createPetandQuery() throws IOException {
         RestAssured.baseURI = "https://petstore.swagger.io/v2";

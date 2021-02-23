@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 import org.testng.annotations.Test;
 
 @Listeners(TestListener.class)
-public class UITest extends TestBase {
+public class UITests extends TestBase {
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void searchAndFindResults() {
