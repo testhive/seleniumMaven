@@ -5,26 +5,26 @@ import org.testng.annotations.*;
 import org.testng.annotations.Test;
 
 @Listeners(TestListener.class)
-public class ChromeTest extends TestBase {
+public class UITest extends TestBase {
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void searchAndFindResults() {
-        GoogleHomepage homePage = new GoogleHomepage(driver);
-        GoogleSearchResultsPage resultsPage = new GoogleSearchResultsPage(driver);
+        WikiHomePage homePage = new WikiHomePage(driver);
+        WikiSearchResultsPage resultsPage = new WikiSearchResultsPage(driver);
 
         homePage.goToPage();
-        homePage.searchTerm("Alper Mermer");
-        assert resultsPage.resultsOnPage().size() > 0 ;
+        homePage.searchTerm("Alan Turing");
+        assert resultsPage.resultPageTitle().equalsIgnoreCase("alan turing");
     }
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void findNoResults() {
-        GoogleHomepage homePage = new GoogleHomepage(driver);
-        GoogleSearchResultsPage resultsPage = new GoogleSearchResultsPage(driver);
+        WikiHomePage homePage = new WikiHomePage(driver);
+        WikiSearchResultsPage resultsPage = new WikiSearchResultsPage(driver);
 
         homePage.goToPage();
         homePage.searchTerm("thishjhafroirsdklfjlksdjfgkjsdflgk");
 
-        assert resultsPage.noResultsOnPage() ;
+        assert resultsPage.noResultFound() ;
     }
 }

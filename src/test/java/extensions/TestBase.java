@@ -8,6 +8,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
+import java.time.Duration;
+
 public class TestBase {
     public static WebDriver driver;
 
@@ -30,6 +32,9 @@ public class TestBase {
         else{
             driver = new ChromeDriver();
         }
+        int defaultMaxWAitTime = 10;
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(defaultMaxWAitTime));
+        driver.manage().window().maximize();
     }
 
     @AfterClass

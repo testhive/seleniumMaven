@@ -46,7 +46,7 @@ public class TestListener implements ITestListener {
 
             return screenShotName;
         } catch (Exception e) {
-            System.out.println("An exception occured while taking screenshot " + e.getCause());
+            System.out.println("An exception occurred while taking screenshot " + e.getCause());
             return null;
         }
     }

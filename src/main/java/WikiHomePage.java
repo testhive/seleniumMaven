@@ -2,12 +2,13 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class GoogleHomepage extends BasePage{
+public class WikiHomePage extends BasePage{
     private static WebDriver driver;
-    String searchField = "#lst-ib";
-    String url = "http://www.google.com";
+    String searchField = "#searchInput";
+    String searchButton = "#searchButton";
+    String url = "https://en.wikipedia.org/wiki/Main_Page";
 
-    GoogleHomepage(WebDriver initialDriver){
+    WikiHomePage(WebDriver initialDriver){
         super(initialDriver);
         driver = initialDriver;
     }
@@ -18,6 +19,6 @@ public class GoogleHomepage extends BasePage{
     public void searchTerm(String term){
         WebElement elem = findByCss(searchField);
         elem.sendKeys(term);
-        elem.sendKeys(Keys.RETURN);
+        findByCss(searchButton).click();
     }
 }
