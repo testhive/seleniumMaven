@@ -21,7 +21,7 @@ public class ApiTests {
         json.getJSONObject("category").put("id", id);
 
         given()
-            .contentType("application/json")
+            .contentType("application/json; charset=UTF-8")
             .body(json.toString())
         .when()
             .post("/pet")
@@ -38,7 +38,7 @@ public class ApiTests {
         orderObject.put("petId", id);
         orderObject.put("quantity", 1);
         given() //create order
-            .contentType("application/json")
+            .contentType("application/json; charset=UTF-8")
             .body(orderObject.toString())
         .when()
             .post("store/order")
@@ -57,7 +57,7 @@ public class ApiTests {
         userObject.put("username", username);
 
         given() //create user
-            .contentType("application/json")
+            .contentType("application/json; charset=UTF-8")
             .body(userObject.toString())
         .when()
             .post("/user")
@@ -66,7 +66,7 @@ public class ApiTests {
     }
     private void loginUser(String username, String password) throws IOException{
         given() //login user
-            .contentType("application/json")
+            .contentType("application/json; charset=UTF-8")
             .queryParam("username", username)
             .queryParam("password", password)
         .when()
@@ -86,7 +86,7 @@ public class ApiTests {
         userObject.put("firstName", "Ahmet");
         userObject.put("lastName", "Yilmaz");
         given() //update user
-            .contentType("application/json")
+            .contentType("application/json; charset=UTF-8")
             .body(userObject.toString())
         .when()
             .put("/user/{username}", username)
@@ -95,7 +95,7 @@ public class ApiTests {
     }
     private void deleteUser(String username) throws  IOException{
         given() //delete user
-            .contentType("application/json")
+            .contentType("application/json; charset=UTF-8")
         .when()
             .delete("/user/{username}", username)
         .then()
@@ -103,7 +103,7 @@ public class ApiTests {
     }
     private void validateUserDeletion(String username) throws  IOException{
         given() //check user deletion
-            .contentType("application/json")
+            .contentType("application/json; charset=UTF-8")
         .when()
             .get("/user/{username}", username)
         .then()
@@ -133,7 +133,7 @@ public class ApiTests {
 
         String responseBody =
         given()
-            .contentType("application/json")
+            .contentType("application/json; charset=UTF-8")
         .when()
             .get("/pet/{newId}", id)
         .then()
