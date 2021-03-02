@@ -1,6 +1,7 @@
 import com.google.common.io.Resources;
 import extensions.RetryAnalyzer;
 import io.restassured.RestAssured;
+import io.restassured.internal.http.HttpResponseException;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 import java.io.IOException;
@@ -101,13 +102,22 @@ public class ApiTests {
         .then()
             .statusCode(200);
     }
-    private void validateUserDeletion(String username) throws  IOException{
-        given() //check user deletion
+    private void getUserThatDoesNotExist(String username) throws  IOException{
+        given()
             .contentType("application/json; charset=UTF-8")
         .when()
             .get("/user/{username}", username)
         .then()
             .statusCode(404);
+    }
+    private void validateUserDeletion(String username) throws  IOException{
+        try{
+            getUserThatDoesNotExist(username);
+        }
+        catch (HttpResponseException ex)
+        {
+            assert ex.getStatusCode() == 404;
+        }
     }
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
