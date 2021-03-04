@@ -1,20 +1,14 @@
+import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-import java.util.List;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
-abstract class BasePage {
-    private static WebDriver driver;
+public class BasePage {
+    SelenideElement findByCss(String css){ return $(By.cssSelector(css)); }
 
-    BasePage(WebDriver initialDriver){
-        driver = initialDriver;
-    }
-    WebElement findByCss(String css){
-        return driver.findElement(By.cssSelector(css));
-    }
-
-    List<WebElement> allByCss(String css){
-        return driver.findElements(By.cssSelector(css));
+    ElementsCollection allByCss(String css){
+        return $$(By.cssSelector(css));
     }
 }

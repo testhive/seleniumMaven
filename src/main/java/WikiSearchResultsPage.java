@@ -1,18 +1,14 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
 
-import java.util.List;
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selenide.$;
 
 public class WikiSearchResultsPage extends BasePage{
-    WikiSearchResultsPage(WebDriver initialDriver){
-        super(initialDriver);
-    }
-
-    String resultPageTitle() {
-        return findByCss("#firstHeading").getText();
+    void resultPageTitleContains(String term) {
+        $(By.cssSelector("#firstHeading")).shouldHave(text(term));
     }
 
     Boolean noResultFound(){
-        return findByCss(".mw-search-nonefound").isEnabled();
+        return $(By.cssSelector(".mw-search-nonefound")).isDisplayed();
     }
 }

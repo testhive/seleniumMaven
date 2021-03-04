@@ -1,26 +1,24 @@
+import com.codeborne.selenide.testng.ScreenShooter;
 import extensions.RetryAnalyzer;
-import extensions.TestBase;
-import extensions.TestListener;
 import org.testng.annotations.*;
 import org.testng.annotations.Test;
 
-@Listeners(TestListener.class)
-public class UITests extends TestBase {
-
+@Listeners({ ScreenShooter.class })
+public class UITests{
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void searchAndFindResults() {
-        WikiHomePage homePage = new WikiHomePage(driver);
-        WikiSearchResultsPage resultsPage = new WikiSearchResultsPage(driver);
+        WikiHomePage homePage = new WikiHomePage();
+        WikiSearchResultsPage resultsPage = new WikiSearchResultsPage();
 
         homePage.goToPage();
         homePage.searchTerm("Alan Turing");
-        assert resultsPage.resultPageTitle().equalsIgnoreCase("alan turing");
+        resultsPage.resultPageTitleContains("alan turing");
     }
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void findNoResults() {
-        WikiHomePage homePage = new WikiHomePage(driver);
-        WikiSearchResultsPage resultsPage = new WikiSearchResultsPage(driver);
+        WikiHomePage homePage = new WikiHomePage();
+        WikiSearchResultsPage resultsPage = new WikiSearchResultsPage();
 
         homePage.goToPage();
         homePage.searchTerm("thishjhafroirsdklfjlksdjfgkjsdflgk");

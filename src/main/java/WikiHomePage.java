@@ -1,24 +1,24 @@
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.SelenideElement;
+import static com.codeborne.selenide.Selenide.open;
 
 public class WikiHomePage extends BasePage{
-    private static WebDriver driver;
+//    private static WebDriver driver;
     String searchField = "#searchInput";
     String searchButton = "#searchButton";
     String url = "https://en.wikipedia.org/wiki/Main_Page";
 
-    WikiHomePage(WebDriver initialDriver){
-        super(initialDriver);
-        driver = initialDriver;
+    WikiHomePage(){
+        Configuration.browser = "Chrome";
+        Configuration.startMaximized = true;
     }
     void goToPage(){
-        driver.get(url);
+        open(url);
     }
 
     public void searchTerm(String term){
-        WebElement elem = findByCss(searchField);
-        elem.sendKeys(term);
+        SelenideElement elem = findByCss(searchField);
+        elem.setValue(term);
         findByCss(searchButton).click();
     }
 }
