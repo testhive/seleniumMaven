@@ -159,7 +159,7 @@ public class ApiTests {
 
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         long id = timestamp.getTime();
-        String username = "testuser" + String.valueOf(id);
+        String username = "testuser" + id;
         System.out.println(id);
 
         createPet(id);
