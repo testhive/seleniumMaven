@@ -2,12 +2,15 @@ import com.google.common.io.Resources;
 import extensions.RetryAnalyzer;
 import io.restassured.RestAssured;
 import io.restassured.internal.http.HttpResponseException;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.sql.Timestamp;
+import java.util.HashMap;
+import java.util.List;
 
 
 import static io.restassured.RestAssured.given;
@@ -169,5 +172,29 @@ public class ApiTests {
         updateUser(id);
         deleteUser(username);
         validateUserDeletion(username);
+    }
+
+    @Test(retryAnalyzer = RetryAnalyzer.class)
+    public void tcmbRate() throws IOException {
+        RestAssured.baseURI = "https://evds2.tcmb.gov.tr/service/evds/series=TP.DK.USD.A-TP.DK.USD.S&startDate=01-03-2021&endDate=05-03-2021&key=wTpQNIJhRp&type=json";
+
+        String responseBody =
+        given()
+            .contentType("application/json; charset=UTF-8")
+        .when()
+            .get("")
+        .then()
+            .statusCode(200)
+            .extract()
+            .body().asString();
+
+        JSONObject json = new JSONObject(responseBody);
+        JSONArray items = new JSONArray(json.get("items").toString());
+
+        for(int i=0; i<items.length(); i++)
+        {
+            float temp = Float.parseFloat(items.getJSONObject(i).getString("TP_DK_USD_S")) - Float.parseFloat(items.getJSONObject(i).getString("TP_DK_USD_A"));
+            System.out.println("Tarih: " + items.getJSONObject(i).get("Tarih") + " Satis-Alis Farki: " + temp + " TRY");
+        }
     }
 }
