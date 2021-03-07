@@ -176,7 +176,7 @@ public class ApiTests {
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void tcmbRate() throws IOException {
-        RestAssured.baseURI = "https://evds2.tcmb.gov.tr/service/evds/series=TP.DK.USD.A-TP.DK.USD.S&startDate=01-03-2021&endDate=06-03-2021&key=wTpQNIJhRp&type=json";
+        RestAssured.baseURI = "https://evds2.tcmb.gov.tr/service/evds/series=TP.DK.USD.A-TP.DK.USD.S&startDate=28-02-2021&endDate=06-03-2021&key=wTpQNIJhRp&type=json";
 
         String responseBody =
         given()
@@ -195,7 +195,7 @@ public class ApiTests {
         {
 
             if(items.getJSONObject(i).get("TP_DK_USD_S").toString().equals("null")){
-                System.out.println("Tarih: " + items.getJSONObject(i).get("Tarih") + " Hafta sonu borsa kapalı");
+                System.out.println("Tarih: " + items.getJSONObject(i).get("Tarih") + " Tatil Gunleri borsa kapalı");
             }
             else{
                 float temp = Float.parseFloat(items.getJSONObject(i).getString("TP_DK_USD_S")) - Float.parseFloat(items.getJSONObject(i).getString("TP_DK_USD_A"));
