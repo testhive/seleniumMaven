@@ -13,6 +13,7 @@ public class UITests{
         homePage.goToPage();
         homePage.searchTerm("Alan Turing");
         resultsPage.resultPageTitleContains("alan turing");
+        System.out.println(homePage.allByCss(".thumbinner").size());
     }
 
     @Test(retryAnalyzer = RetryAnalyzer.class)

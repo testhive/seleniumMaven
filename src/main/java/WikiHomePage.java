@@ -8,10 +8,6 @@ public class WikiHomePage extends BasePage{
     String searchButton = "#searchButton";
     String url = "https://en.wikipedia.org/wiki/Main_Page";
 
-    WikiHomePage(){
-        Configuration.browser = "Chrome";
-        Configuration.startMaximized = true;
-    }
     void goToPage(){
         open(url);
     }
