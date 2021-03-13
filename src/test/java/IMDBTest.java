@@ -17,8 +17,6 @@ public class IMDBTest {
 //        TODO
         Configuration.browser = "Chrome";
         Configuration.startMaximized = true;
-        Configuration.timeout = 45000;
-
 
 //        go to imdb.com
         open("http://imdb.com");
