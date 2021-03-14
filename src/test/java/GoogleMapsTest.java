@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.testng.ScreenShooter;
@@ -21,8 +22,11 @@ public class GoogleMapsTest {
 //        Configuration.headless = true;
 
         open("https://www.google.com/maps");
-        switchTo().frame($(".widget-consent-frame"));
-        $("#introAgreeButton").click();
+        if($(".widget-consent-frame").exists())
+        {
+            switchTo().frame($(".widget-consent-frame"));
+            $("#introAgreeButton").click();
+        }
 
         $("#searchboxinput").setValue("Istanbul");
         $("#searchbox-searchbutton").click();
