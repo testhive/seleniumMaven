@@ -17,6 +17,7 @@ public class IMDBTest {
 //        TODO
         Configuration.browser = "Chrome";
         Configuration.startMaximized = true;
+//        Configuration.headless = true;
 
 //        go to imdb.com
         open("http://imdb.com");
@@ -29,9 +30,9 @@ public class IMDBTest {
         SelenideElement cast = $(".cast_list");
 //        actor list should contain actorName    Carrie-Anne Moss
 //        go to actor details page
-        cast.$(byText("Carrie-Anne Moss")).click();
+        cast.find(byText("Carrie-Anne Moss")).click();
 //        check movie list for actor  .filmo-category-section
 //        movie list should contain movieName   The Matrix  actress-tt0133093
-        $("#actress-tt0133093").click();
+        $("#filmography").find("#actress-tt0133093").click();
     }
 }
