@@ -15,8 +15,7 @@ import static com.codeborne.selenide.Selenide.*;
 @Listeners({ ScreenShooter.class })
 public class GoogleMapsTest {
    @Test(retryAnalyzer = RetryAnalyzer.class)
-    public void findActorinMovie() {
-
+    public void ankaraIstanbulGitGel5Saat() {
         Configuration.browser = "Chrome";
         Configuration.startMaximized = true;
         Configuration.timeout = 10000;

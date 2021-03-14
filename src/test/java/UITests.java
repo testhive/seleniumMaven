@@ -25,5 +25,6 @@ public class UITests{
         homePage.searchTerm("thishjhafroirsdklfjlksdjfgkjsdflgk");
 
         assert resultsPage.noResultFound() ;
+        assert false;
     }
 }

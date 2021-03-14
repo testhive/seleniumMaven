@@ -16,7 +16,7 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 @Listeners({ ScreenShooter.class })
 public class ITUTest {
     @Test(retryAnalyzer = RetryAnalyzer.class)
-    public void findActorinMovie() {
+    public void searchBook() {
 
         Configuration.browser = "Chrome";
         Configuration.startMaximized = true;

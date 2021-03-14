@@ -8,8 +8,9 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class BasePage {
     BasePage(){
-        Configuration.browser = "Firefox";
+        Configuration.browser = "Chrome";
         Configuration.startMaximized = true;
+        Configuration.headless = true;
     }
 
     SelenideElement findByCss(String css){ return $(By.cssSelector(css)); }
