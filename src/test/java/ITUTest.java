@@ -1,12 +1,17 @@
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.testng.ScreenShooter;
 import extensions.RetryAnalyzer;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import java.util.Set;
+
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 @Listeners({ ScreenShooter.class })
 public class ITUTest {
@@ -21,7 +26,9 @@ public class ITUTest {
         open("http://kutuphane.itu.edu.tr/");
         $(".allsq").setValue("Agile Testing").pressEnter();
 
-        switchTo().window(1);
+        int handles = getWebDriver().getWindowHandles().size();
+        switchTo().window(handles-1);
+
         $(".closeguest").click();
 
         try {
