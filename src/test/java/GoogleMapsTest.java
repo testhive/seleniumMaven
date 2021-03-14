@@ -19,6 +19,7 @@ public class GoogleMapsTest {
 
         Configuration.browser = "Chrome";
         Configuration.startMaximized = true;
+        Configuration.timeout = 10000;
 //        Configuration.headless = true;
 
         open("https://www.google.com/maps");
