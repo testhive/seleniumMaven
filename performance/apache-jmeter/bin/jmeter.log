@@ -1,0 +1,337 @@
+2021-03-20 17:42:42,686 INFO o.a.j.u.JMeterUtils: Setting Locale to en_GB
+2021-03-20 17:42:42,702 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2021-03-20 17:42:42,703 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2021-03-20 17:42:42,707 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-03-20 17:42:42,708 INFO o.a.j.JMeter: Version 5.4.1
+2021-03-20 17:42:42,708 INFO o.a.j.JMeter: java.version=11.0.10
+2021-03-20 17:42:42,708 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2021-03-20 17:42:42,708 INFO o.a.j.JMeter: os.name=Windows 10
+2021-03-20 17:42:42,708 INFO o.a.j.JMeter: os.arch=amd64
+2021-03-20 17:42:42,708 INFO o.a.j.JMeter: os.version=10.0
+2021-03-20 17:42:42,708 INFO o.a.j.JMeter: file.encoding=Cp1252
+2021-03-20 17:42:42,708 INFO o.a.j.JMeter: java.awt.headless=null
+2021-03-20 17:42:42,708 INFO o.a.j.JMeter: Max memory     =8579448832
+2021-03-20 17:42:42,708 INFO o.a.j.JMeter: Available Processors =8
+2021-03-20 17:42:42,716 INFO o.a.j.JMeter: Default Locale=English (United Kingdom)
+2021-03-20 17:42:42,717 INFO o.a.j.JMeter: JMeter  Locale=English (United Kingdom)
+2021-03-20 17:42:42,717 INFO o.a.j.JMeter: JMeterHome=C:\Users\alper\Documents\workspace\seleniumMaven\performance\apache-jmeter
+2021-03-20 17:42:42,717 INFO o.a.j.JMeter: user.dir  =C:\Users\alper\Documents\workspace\seleniumMaven\performance\apache-jmeter\bin
+2021-03-20 17:42:42,718 INFO o.a.j.JMeter: PWD       =C:\Users\alper\Documents\workspace\seleniumMaven\performance\apache-jmeter\bin
+2021-03-20 17:42:42,718 INFO o.a.j.JMeter: IP: 192.168.0.33 Name: DESKTOP-H4KQOLL FullName: DESKTOP-H4KQOLL
+2021-03-20 17:42:42,816 INFO o.a.j.JMeter: Setting LAF to: laf:com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2021-03-20 17:42:43,051 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2021-03-20 17:42:51,875 INFO o.a.j.s.FileServer: Default base='C:\Users\alper\Documents\workspace\seleniumMaven\performance\apache-jmeter\bin'
+2021-03-20 17:42:51,877 INFO o.a.j.g.a.Load: Loading file: C:\Users\alper\Documents\workspace\seleniumMaven\performance\example.jmx
+2021-03-20 17:42:51,877 INFO o.a.j.s.FileServer: Set new base='C:\Users\alper\Documents\workspace\seleniumMaven\performance'
+2021-03-20 17:42:52,005 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-03-20 17:42:52,015 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-03-20 17:42:52,016 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-03-20 17:42:52,017 INFO o.a.j.s.SaveService: Loading file: C:\Users\alper\Documents\workspace\seleniumMaven\performance\example.jmx
+2021-03-20 17:42:52,033 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-03-20 17:42:52,033 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-03-20 17:42:52,033 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-03-20 17:42:52,033 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-03-20 17:42:52,033 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-03-20 17:42:52,033 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-03-20 17:42:52,036 WARN o.a.j.g.a.Load: Unexpected error. java.lang.IllegalArgumentException: Problem loading XML from:'C:\Users\alper\Documents\workspace\seleniumMaven\performance\example.jmx'. 
+Cause:
+NullPointerException: 
+
+ Detail:com.thoughtworks.xstream.converters.ConversionException: 
+---- Debugging information ----
+cause-exception     : com.thoughtworks.xstream.converters.ConversionException
+cause-message       : 
+first-jmeter-class  : org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66)
+class               : org.apache.jmeter.save.ScriptWrapper
+required-type       : org.apache.jmeter.save.ScriptWrapper
+converter-type      : org.apache.jmeter.save.ScriptWrapperConverter
+path                : /jmeterTestPlan/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/HeaderManager
+line number         : 43
+version             : 5.4.1
+-------------------------------
+java.lang.IllegalArgumentException: Problem loading XML from:'C:\Users\alper\Documents\workspace\seleniumMaven\performance\example.jmx'. 
+Cause:
+NullPointerException: 
+
+ Detail:com.thoughtworks.xstream.converters.ConversionException: 
+---- Debugging information ----
+cause-exception     : com.thoughtworks.xstream.converters.ConversionException
+cause-message       : 
+first-jmeter-class  : org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66)
+class               : org.apache.jmeter.save.ScriptWrapper
+required-type       : org.apache.jmeter.save.ScriptWrapper
+converter-type      : org.apache.jmeter.save.ScriptWrapperConverter
+path                : /jmeterTestPlan/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/HeaderManager
+line number         : 43
+version             : 5.4.1
+-------------------------------
+	at org.apache.jmeter.save.SaveService.readTree(SaveService.java:459) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.save.SaveService.loadTree(SaveService.java:432) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:129) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:101) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.Load.doActionAfterCheck(Load.java:88) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.AbstractActionWithNoRunningTest.doAction(AbstractActionWithNoRunningTest.java:44) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:87) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:69) ~[ApacheJMeter_core.jar:5.4.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+Caused by: com.thoughtworks.xstream.converters.ConversionException: 
+---- Debugging information ----
+cause-exception     : com.thoughtworks.xstream.converters.ConversionException
+cause-message       : 
+first-jmeter-class  : org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66)
+class               : org.apache.jmeter.save.ScriptWrapper
+required-type       : org.apache.jmeter.save.ScriptWrapper
+converter-type      : org.apache.jmeter.save.ScriptWrapperConverter
+path                : /jmeterTestPlan/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/HeaderManager
+line number         : 43
+version             : 5.4.1
+-------------------------------
+	at org.apache.jmeter.save.ScriptWrapperConverter.createConversionException(ScriptWrapperConverter.java:101) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.save.ScriptWrapperConverter.unmarshal(ScriptWrapperConverter.java:95) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1409) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1388) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1273) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.SaveService.readTree(SaveService.java:449) ~[ApacheJMeter_core.jar:5.4.1]
+	... 20 more
+Caused by: com.thoughtworks.xstream.converters.ConversionException: 
+---- Debugging information ----
+cause-exception     : java.lang.NullPointerException
+cause-message       : null
+class               : org.apache.jmeter.protocol.http.control.HeaderManager
+required-type       : org.apache.jmeter.protocol.http.control.HeaderManager
+converter-type      : org.apache.jmeter.save.converters.TestElementConverter
+path                : /jmeterTestPlan/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/HeaderManager
+line number         : 43
+class[1]            : org.apache.jorphan.collections.HashTree
+required-type[1]    : org.apache.jorphan.collections.HashTree
+converter-type[1]   : org.apache.jmeter.save.converters.HashTreeConverter
+-------------------------------
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:77) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readBareItem(AbstractCollectionConverter.java:132) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readBareItem(AbstractCollectionConverter.java:132) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readBareItem(AbstractCollectionConverter.java:132) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readBareItem(AbstractCollectionConverter.java:132) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.ScriptWrapperConverter.unmarshal(ScriptWrapperConverter.java:93) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1409) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1388) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1273) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.SaveService.readTree(SaveService.java:449) ~[ApacheJMeter_core.jar:5.4.1]
+	... 20 more
+Caused by: java.lang.NullPointerException
+	at java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936) ~[?:?]
+	at java.util.Properties.getProperty(Properties.java:1117) ~[?:?]
+	at org.apache.jmeter.save.SaveService.aliasToClass(SaveService.java:293) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.save.converters.TestElementConverter.unmarshal(TestElementConverter.java:91) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readBareItem(AbstractCollectionConverter.java:132) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readBareItem(AbstractCollectionConverter.java:132) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readBareItem(AbstractCollectionConverter.java:132) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.readBareItem(AbstractCollectionConverter.java:132) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.ScriptWrapperConverter.unmarshal(ScriptWrapperConverter.java:93) ~[ApacheJMeter_core.jar:5.4.1]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:72) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1409) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1388) ~[xstream-1.4.15.jar:1.4.15]
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1273) ~[xstream-1.4.15.jar:1.4.15]
+	at org.apache.jmeter.save.SaveService.readTree(SaveService.java:449) ~[ApacheJMeter_core.jar:5.4.1]
+	... 20 more
+2021-03-20 17:42:52,044 ERROR o.a.j.u.JMeterUtils: Problem loading XML from:'C:\Users\alper\Documents\workspace\seleniumMaven\performance\example.jmx'. 
+Cause:
+NullPointerException: 
+
+ Detail:com.thoughtworks.xstream.converters.ConversionException: 
+---- Debugging information ----
+cause-exception     : com.thoughtworks.xstream.converters.ConversionException
+cause-message       : 
+first-jmeter-class  : org.apache.jmeter.save.converters.HashTreeConverter.unmarshal(HashTreeConverter.java:66)
+class               : org.apache.jmeter.save.ScriptWrapper
+required-type       : org.apache.jmeter.save.ScriptWrapper
+converter-type      : org.apache.jmeter.save.ScriptWrapperConverter
+path                : /jmeterTestPlan/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/org.apache.jorphan.collections.HashTree/HeaderManager
+line number         : 43
+version             : 5.4.1
+-------------------------------
+2021-03-20 17:47:51,676 INFO o.a.j.g.a.Load: Loading file: C:\Users\alper\Documents\workspace\seleniumMaven\performance\example.jmx
+2021-03-20 17:47:51,676 INFO o.a.j.s.FileServer: Set new base='C:\Users\alper\Documents\workspace\seleniumMaven\performance'
+2021-03-20 17:47:51,676 INFO o.a.j.s.SaveService: Loading file: C:\Users\alper\Documents\workspace\seleniumMaven\performance\example.jmx
+2021-03-20 17:47:51,730 INFO o.a.j.s.FileServer: Set new base='C:\Users\alper\Documents\workspace\seleniumMaven\performance'
+2021-03-20 17:48:20,958 ERROR o.a.j.g.a.ActionRouter: performAction(edit) updateCurrentGui() onjava.awt.event.ActionEvent[unknown type,cmd=edit,when=0,modifiers=] on org.apache.jmeter.gui.tree.JMeterTreeListener@50b81013 caused
+java.lang.NullPointerException: null
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.configure(AbstractJMeterGuiComponent.java:205) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.config.gui.ArgumentsPanel.configure(ArgumentsPanel.java:291) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.control.gui.TestPlanGui.configure(TestPlanGui.java:172) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.GuiPackage.refreshCurrentGui(GuiPackage.java:468) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.GuiPackage.updateCurrentGui(GuiPackage.java:452) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:79) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:69) ~[ApacheJMeter_core.jar:5.4.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2021-03-20 17:48:20,959 ERROR o.a.j.u.JMeterUtils: Problem updating GUI - see log file for details
+2021-03-20 17:48:23,353 ERROR o.a.j.g.GuiPackage: Problem retrieving current gui
+java.lang.NullPointerException: null
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.configure(AbstractJMeterGuiComponent.java:205) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.config.gui.ArgumentsPanel.configure(ArgumentsPanel.java:291) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.control.gui.TestPlanGui.configure(TestPlanGui.java:172) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.GuiPackage.getCurrentGui(GuiPackage.java:307) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.EditCommand.doAction(EditCommand.java:44) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:87) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:69) ~[ApacheJMeter_core.jar:5.4.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2021-03-20 17:48:23,359 ERROR o.a.j.g.GuiPackage: Problem retrieving current gui
+java.lang.NullPointerException: null
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.configure(AbstractJMeterGuiComponent.java:205) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.config.gui.ArgumentsPanel.configure(ArgumentsPanel.java:291) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.control.gui.TestPlanGui.configure(TestPlanGui.java:172) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.GuiPackage.getCurrentGui(GuiPackage.java:307) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.util.MenuFactory.addFileMenu(MenuFactory.java:296) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.control.gui.TestPlanGui.createPopupMenu(TestPlanGui.java:109) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.createPopupMenu(JMeterTreeNode.java:184) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.EditCommand.doAction(EditCommand.java:46) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:87) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:69) ~[ApacheJMeter_core.jar:5.4.1]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2021-03-20 17:48:33,132 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-03-20 17:48:33,132 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-03-20 17:48:33,132 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-03-20 17:48:33,132 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-03-20 17:48:33,232 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-03-20 17:48:35,461 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-03-20 17:48:35,462 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-03-20 17:48:35,462 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-03-20 17:48:35,462 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-03-20 17:48:35,463 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-03-20 17:48:35,640 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2021-03-20 17:48:35,671 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Example Thread Group
+2021-03-20 17:48:35,671 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Example Thread Group.
+2021-03-20 17:48:35,672 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-03-20 17:48:35,672 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2021-03-20 17:48:35,674 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-03-20 17:48:35,674 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-03-20 17:48:35,676 INFO o.a.j.t.JMeterThread: Thread started: Example Thread Group 1-1
+2021-03-20 17:48:35,692 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-H4KQOLL
+2021-03-20 17:48:35,698 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2021-03-20 17:48:35,772 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2021-03-20 17:48:35,775 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2021-03-20 17:48:35,775 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2021-03-20 17:48:35,927 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2021-03-20 17:48:35,929 INFO o.a.j.u.SSLManager: KeyStore created OK
+2021-03-20 17:48:35,929 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2021-03-20 17:48:36,489 INFO o.a.j.t.JMeterThread: Thread is done: Example Thread Group 1-1
+2021-03-20 17:48:36,489 INFO o.a.j.t.JMeterThread: Thread finished: Example Thread Group 1-1
+2021-03-20 17:48:36,489 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-03-20 17:48:36,489 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2021-03-20 18:00:21,471 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-03-20 18:00:21,492 INFO o.a.j.g.a.Load: Loading file: C:\Users\alper\Documents\workspace\seleniumMaven\performance\petStore.jmx
+2021-03-20 18:00:21,492 INFO o.a.j.s.FileServer: Set new base='C:\Users\alper\Documents\workspace\seleniumMaven\performance'
+2021-03-20 18:00:21,492 INFO o.a.j.s.SaveService: Loading file: C:\Users\alper\Documents\workspace\seleniumMaven\performance\petStore.jmx
+2021-03-20 18:00:21,560 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-03-20 18:00:21,589 INFO o.a.j.s.FileServer: Set new base='C:\Users\alper\Documents\workspace\seleniumMaven\performance'
