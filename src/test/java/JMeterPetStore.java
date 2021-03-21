@@ -31,7 +31,7 @@ public class JMeterPetStore {
     @Test
     public static void testPetstore() throws Exception {
 
-        File jmeterProperties = new File("performance/apache-jmeter/bin/jmeter.properties");
+        File jmeterProperties = new File("performance/jmeter.properties");
         if (jmeterProperties.exists()) {
             //JMeter Engine
             StandardJMeterEngine jmeter = new StandardJMeterEngine();
